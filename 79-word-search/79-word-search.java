@@ -31,6 +31,7 @@ class Solution {
             findWord(board, row, col+1, position+1, word, visited) ||
             findWord(board, row-1, col, position+1, word, visited) ||
             findWord(board, row, col-1, position+1, word, visited) ;
+        
          visited[row][col] = false;
         return result;
        
